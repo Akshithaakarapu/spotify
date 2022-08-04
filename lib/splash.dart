@@ -18,11 +18,12 @@ class _LogopageState extends State<Logopage> {
     _navigatetohome(); 
   }
   _navigatetohome()async{
-    await Future.delayed(Duration(milliseconds: 1500),() {});
+    await Future.delayed(Duration(seconds: 25),() {});
      Navigator.pushReplacement(
       context, 
       MaterialPageRoute(
-        builder: (context) =>Loginpage()),);
+        builder: (context) =>Loginpage()),
+        );
     }
   Widget build(BuildContext context) {
     return  Scaffold(
